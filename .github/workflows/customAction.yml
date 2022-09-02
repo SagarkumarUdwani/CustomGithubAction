@@ -1,19 +1,18 @@
 name: custom action to print python
 
-on: [push, workflow-dispatch]
+on: [push, workflow_dispatch]
 
 jobs:
-  build-python
-  -name: build python
+ build-python:
+  runs-on: ubuntu-latest
   
   steps:
-    -name: checkout
-    -uses: actions/checkout@v3
-    
-    -name: install python
-    uses: actions/setup-python@v4
-    with:
-      python-version:3.10
-    
-    -name: print line
-    run: echo 'welcome to python'
+   - uses: actions/checkout@v3
+     
+   - name: install-python
+     uses: actions/setup-python@v4
+     with:
+      python-version: 3.10
+      
+   - name: print-line
+     run: echo 'welcome to python'
