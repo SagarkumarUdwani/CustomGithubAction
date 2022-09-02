@@ -15,7 +15,7 @@ jobs:
           ls -la
      
    - name: hello-world-action
-     uses: ./.github/actions/actionHelloWorld
+     uses: ./actions/actionHelloWorld
    
    - name: install-python
      uses: actions/setup-python@v4
