@@ -1,0 +1,6 @@
+name: 'hello world action'
+runs:
+ using: "composite"
+ steps:
+  run: helloworld.sh
+  shell: bash
