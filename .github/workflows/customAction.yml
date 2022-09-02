@@ -10,7 +10,7 @@ jobs:
    - uses: actions/checkout@v3
    
    - id: hello-world-action
-     uses: ././actions/action@v1
+     uses: /actions/action@v1
    
    - name: install-python
      uses: actions/setup-python@v4
