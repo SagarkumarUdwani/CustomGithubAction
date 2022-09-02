@@ -13,7 +13,7 @@ jobs:
      run: pwd
      
    - name: hello-world-action
-     uses: .github/actions/actionHelloWorld@v1
+     uses: ./.github/actions/actionHelloWorld
    
    - name: install-python
      uses: actions/setup-python@v4
