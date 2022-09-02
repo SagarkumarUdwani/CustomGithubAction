@@ -11,8 +11,8 @@ jobs:
    
    - name: Check current directory and contents
      run: |
-         pwd 
-         ls -la
+          pwd 
+          ls -la
    
    - id: hello-world-action
      uses: ./.github/actions/actionHelloWorld
